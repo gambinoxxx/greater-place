@@ -1,0 +1,109 @@
+.app__about {
+    padding: 4rem 2rem;
+    background-color: var(--white-color);
+    text-align: center;
+  
+    .head-text {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+    }
+  
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    &-profile {
+      flex: 1;
+      min-width: 100px;
+      max-width: 200px;
+      
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      }
+    }
+  
+    &-text {
+      flex: 1;
+      min-width: 300px;
+      text-align: left;
+      
+      h3 {
+        font-size: 2rem;
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+      }
+      
+      p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: var(--gray-color);
+        margin-bottom: 1.5rem;
+      }
+      
+      blockquote {
+        font-style: italic;
+        color: var(--secondary-color);
+        border-left: 3px solid var(--secondary-color);
+        padding-left: 1.5rem;
+        margin: 2rem 0;
+        line-height: 1.8;
+      }
+    }
+  
+    .read-more-btn {
+      display: inline-block;
+      padding: 0.8em 2em;
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+      
+      &:hover {
+        background-color: darken(#38bdf8, 20%);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      padding: 3rem 1rem;
+      
+      .head-text {
+        font-size: 2.5rem;
+      }
+      
+      &-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      &-text {
+        text-align: center;
+        
+        blockquote {
+          text-align: left;
+        }
+      }
+    }
+  }
