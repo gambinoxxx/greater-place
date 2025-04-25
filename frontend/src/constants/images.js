@@ -36,7 +36,7 @@ import chris from '../assets/chris.png';
 // import skype from '../assets/skype.png';
 // import spotify from '../assets/spotify.png';
 
-export default {
+const images = {
   // email,
   // mobile,
   brandy,
@@ -77,3 +77,4 @@ export default {
   // skype,
   // spotify,
 };
+export default images;
