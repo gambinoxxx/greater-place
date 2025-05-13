@@ -15,10 +15,10 @@ const DonationSection = () => {
   const coordinators = [
     { id: 1, name: 'Ijeoma Mbaezue', role: 'Chair-Person', image: images.ijeoma },
     { id: 2, name: 'Chidimma Okeh', role: 'Vice-person', image: images.chidinma },
-    { id: 3, name: 'Mycherie Onwuzuruike', role: 'Treasurer', image: images.mycherie },
-    { id: 4, name: 'Ekemini Udom', role: 'Secretary', image: images.kemi },
-    { id: 5, name: 'Ashaayla Anu Elora', role: 'Dancer Instructor', image: images.dance },
-    { id: 6, name: 'Ibeh Chris', role: 'Product Manager', image: images.chris },
+    { id: 3, name: 'Mycherie Onwuzuruike', role: 'Board Member', image: images.mycherie },
+    { id: 4, name: 'Ekemini Udom', role: 'Board Member', image: images.kemi },
+    { id: 5, name: 'Ashaayla Anu Elora', role: 'Dance Instructor', image: images.dance },
+    { id: 6, name: 'Kaylee Favour', role: 'Board Member', image: images.kaylee },
 
 
   ];

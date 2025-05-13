@@ -1,5 +1,5 @@
 // import email from '../assets/email.png';
-// import mobile from '../assets/mobile.png';
+import kaylee from '../assets/kaylee.png';
 import brandy from '../assets/brandy.png';
 import group1 from '../assets/group1.png';
 import profile3 from '../assets/profile3.png';
@@ -33,7 +33,7 @@ import love from '../assets/love.png';
 import testimony from '../assets/testimony.png';
 import dance from '../assets/dance.png';
 import chris from '../assets/chris.png';
-// import skype from '../assets/skype.png';
+import brandy2 from '../assets/brandy2.png';
 // import spotify from '../assets/spotify.png';
 
 const images = {
@@ -72,8 +72,8 @@ const images = {
   testimony,
   dance,
   chris,
-  // bolt,
-  // nb,
+ brandy2,
+ kaylee,
   // skype,
   // spotify,
 };

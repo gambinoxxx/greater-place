@@ -6,6 +6,7 @@ import Testimonials from './Testimonials/Testimonials';
 import Dancers from './Dancers/Dancers';
 import Donation from './Donation/Donation';
 import Booking from './Booking/Booking';
+import SummaryPage from './SummaryPage/SummaryPage';
 
 
 export {
@@ -16,5 +17,6 @@ export {
   Testimonials,
   Dancers,
   Donation,
-  Booking
+  Booking,
+  SummaryPage
 };
