@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import { Navbar } from '../../components';
 import { Footer, Donation, Testimonials } from '../../container';
-import { images, video } from '../../constants';
+import { images } from '../../constants';
 import './SummaryPage.scss';
 
 const SummaryPage = () => {
   const [showMoreVideos, setShowMoreVideos] = useState(false);
 
   const videos = [
-    // YouTube videos
-    { type: 'youtube', id: 'EonTZy7jSn0' },
-    { type: 'youtube', id: 'WmF8_l8TI3U' },
-    { type: 'youtube', id: '_1fbvkqvMy4' },
-    // Local videos
-    { type: 'local', src: video.video1 },
-    { type: 'local', src: video.video2 }
+    { id: 'EonTZy7jSn0' },
+    { id: 'WmF8_l8TI3U'  },
+    { id: '_1fbvkqvMy4'}
   ];
 
   return (
@@ -64,29 +60,20 @@ const SummaryPage = () => {
         {/* Video Section */}
         <section className="video-section">
           <h2>Latest Videos</h2>
-          <p>Please ensure to like ❤️ and share 🔁
-          </p>
+          <p>Enjoy our recent worship and performance videos</p>
           <div className="video-grid">
-            {videos.slice(0, showMoreVideos ? 5 : 2).map((vid, index) => (
-              <div className="video-item" key={index}>
-                {vid.type === 'youtube' ? (
-                  <div className="youtube-container">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${vid.id}`}
-                      title={`YouTube video ${index + 1}`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                ) : (
-                  <div className="local-video">
-                    <video controls poster={images.testimonialThumbnail1}>
-                      <source src={vid.src} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                )}
+            {videos.slice(0, showMoreVideos ? 3 : 2).map((video, index) => (
+              <div className="video-item" key={video.id}>
+                <div className="youtube-container">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.id}`}
+                    title={video.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <h4>{video.title}</h4>
               </div>
             ))}
           </div>
@@ -94,7 +81,7 @@ const SummaryPage = () => {
             className="show-more-btn"
             onClick={() => setShowMoreVideos(!showMoreVideos)}
           >
-            {showMoreVideos ? 'Show Less' : 'Show More'}
+            {showMoreVideos ? 'Show Less Videos' : 'Show All Videos'}
           </button>
         </section>
 
