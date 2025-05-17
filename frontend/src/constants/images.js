@@ -1,4 +1,4 @@
-// import email from '../assets/email.png';
+import ayanna from '../assets/ayanna.jpeg';
 import kaylee from '../assets/kaylee.png';
 import brandy from '../assets/brandy.png';
 import group1 from '../assets/group1.png';
@@ -38,7 +38,7 @@ import brandy2 from '../assets/brandy2.png';
 
 const images = {
   // email,
-  // mobile,
+  ayanna,
   brandy,
   group1,
   profile3,

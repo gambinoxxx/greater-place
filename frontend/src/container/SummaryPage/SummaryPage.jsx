@@ -10,6 +10,8 @@ const SummaryPage = () => {
   const videos = [
     { id: 'EonTZy7jSn0' },
     { id: 'WmF8_l8TI3U'  },
+    { id: 'qZ1OdCVkJhI' },
+    { id: 'vfnzs9CvaMg'},
     { id: '_1fbvkqvMy4'}
   ];
 
@@ -48,8 +50,7 @@ const SummaryPage = () => {
                 Hi everyone, my name is Brandy Onwuzuruike and God has given me this vision of Greater Place Nonprofit Inc. David danced with all his might because of God's presence according to 2 Samuel 6:14. I've learned that everyone has their own unique style of dance, but it's the presence of God that truly makes a difference in both our lives and the lives of those who witness our dance.
               </p>
               <p>
-                I want to pour out everything within me from a place of deep intimacy with God. I don't want to put on a performance—I carry the tangible presence of God. I desire for it to flow naturally within me through the art of dance, whether in worship to God or as a message for those He has called me to reach. It's a continual, consistent posture of surrender before God; it's a lifestyle, not just a one-time performance.
-              </p>
+              I want to pour out everything within me from a place of deep intimacy with God. I don't want to us to put on a performance—we carry the tangible presence of God. I desire for it to flow naturally within us through the art of dance, whether in worship to God or as a message for those He has called us to reach. It's a continual, consistent posture of surrender before God; it's a lifestyle, not just a one-time performance.              </p>
               <p>
                 Creating a space where people of all ages can embrace their God-given creative gifts with confidence and boldness in His presence. For as long as I can remember, dancing as a little girl in God's presence shaped my heart in such a powerful way, and He has pruned me in ways I could never have expected. I truly believe this space will not only bless others but also allow them to experience something similar—to connect with God through their creative art of dance.
               </p>
@@ -62,7 +63,7 @@ const SummaryPage = () => {
           <h2>Latest Videos</h2>
           <p>Enjoy our recent worship and performance videos</p>
           <div className="video-grid">
-            {videos.slice(0, showMoreVideos ? 3 : 2).map((video, index) => (
+            {videos.slice(0, showMoreVideos ? 5 : 2).map((video, index) => (
               <div className="video-item" key={video.id}>
                 <div className="youtube-container">
                   <iframe

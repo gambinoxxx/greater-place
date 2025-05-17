@@ -4,12 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
+.mp4
 
 # testing
 /coverage
 
 # production
 /build
+*.mp4
 
 # misc
 .DS_Store

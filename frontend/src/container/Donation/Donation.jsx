@@ -14,11 +14,11 @@ const DonationSection = () => {
 
   const coordinators = [
     { id: 1, name: 'Ijeoma Mbaezue', role: 'Chair-Person', image: images.ijeoma },
-    { id: 2, name: 'Chidimma Okeh', role: 'Vice-person', image: images.chidinma },
+    { id: 2, name: 'Chidimma Okeh', role: 'Board Member', image: images.chidinma },
     { id: 3, name: 'Mycherie Onwuzuruike', role: 'Board Member', image: images.mycherie },
     { id: 4, name: 'Ekemini Udom', role: 'Board Member', image: images.kemi },
     { id: 5, name: 'Ashaayla Anu Elora', role: 'Dance Instructor', image: images.dance },
-    { id: 6, name: 'Kaylee Favour', role: 'Board Member', image: images.kaylee },
+    { id: 6, name: 'Paula', role: 'Board Member', image: images.kaylee },
 
 
   ];
@@ -30,7 +30,7 @@ const DonationSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const cashAppLink = `https://cash.app/$GreaterPlace/${donationData.amount}`;
+    const cashAppLink = `https://cash.app/$BrandyOnwuzuruike/${donationData.amount}`;
     window.open(cashAppLink, '_blank');
     setShowForm(false);
   };
