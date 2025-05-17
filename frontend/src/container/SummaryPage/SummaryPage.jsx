@@ -8,10 +8,10 @@ const SummaryPage = () => {
   const [showMoreVideos, setShowMoreVideos] = useState(false);
 
   const videos = [
-    { id: 'EonTZy7jSn0' },
-    { id: 'WmF8_l8TI3U'  },
     { id: 'qZ1OdCVkJhI' },
     { id: 'vfnzs9CvaMg'},
+    { id: 'EonTZy7jSn0' },
+    { id: 'WmF8_l8TI3U'  },
     { id: '_1fbvkqvMy4'}
   ];
 
