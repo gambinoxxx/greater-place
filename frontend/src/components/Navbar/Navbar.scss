@@ -1,4 +1,95 @@
+.app__navbar {/* ... your existing Navbar.scss ... */
+
 .app__navbar {
+  /* ... existing styles ... */
+  background: rgba(255, 255, 255, 0.25);  /* Light mode background */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Light mode border */
+  /* ... rest of the styles ... */
+
+  &.dark-mode {
+    background: rgba(20, 20, 20, 0.75); /* Dark mode background (darker and more opaque) */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Dark mode border (more subtle) */
+    
+    .app__navbar-links li a {
+      color: var(--lightGray-color); /* Light text in dark mode */
+
+      &:hover {
+        color: var(--primary-color); /* Different hover color in dark mode */
+      }
+    }
+
+    .app__navbar-menu {
+      background-color: var(--primary-color); /* Change menu icon color */
+
+      svg {
+        color: var(--black-color); /* Dark icon color */
+      }
+    }
+    
+    .app__navbar-menu div {
+      background-color: var(--dark-background); /* Dark background for mobile menu */
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Darker shadow */
+
+      svg {
+        color: var(--primary-color); /* Different icon color */
+      }
+
+      ul li a {
+        color: var(--lightGray-color);
+
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+// Add these styles to your Navbar.scss file
+
+.app__navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.app__navbar-theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+
+  svg {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    background-color: var(--lightGray-color);
+  }
+}
+
+// Add these styles inside your existing .app__navbar.dark-mode rule
+// or add them to the main level if you don't have one yet.
+.app__navbar.dark-mode {
+  // ... other dark mode navbar styles
+
+  .app__navbar-theme-toggle {
+    svg {
+      color: var(--primary-color);
+    }
+
+    &:hover {
+      background-color: var(--dark-hover-color);
+    }
+  }
+}
+
   width: 100%;
 
   display: flex;

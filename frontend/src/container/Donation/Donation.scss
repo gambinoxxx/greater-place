@@ -8,14 +8,17 @@
       margin-bottom: 2rem;
   
       h2 {
-        font-size: 2rem;
-        color: #2d2e32;
-        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        text-align: center;
       }
   
       p {
-        color: #666;
-        font-size: 1rem;
+        color: var(--primary-color);
+        font-size: 1.5rem;
       }
     }
   

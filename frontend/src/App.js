@@ -12,7 +12,7 @@ import {
   SummaryPage 
 } from './container';
 import { Navbar } from './components';
-import './App.scss';
+import './App.css';
 
 // Create a layout component for the home page sections
 const HomePageLayout = () => {

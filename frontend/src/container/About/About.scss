@@ -1,8 +1,24 @@
 .app__about {
     padding: 4rem 2rem;
-    background-color: var(--white-color);
     text-align: center;
+    position: relative;
+    isolation: isolate; /* Creates a new stacking context for z-index */
   
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+
+      /* Multi-layered background: a semi-transparent color overlay on top of the image */
+      background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Dark overlay for readability */
+        url('../../assets/about.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Creates a parallax effect */
+    }
+
     .head-text {
       font-size: 2rem;
       color: var(--primary-color);
@@ -52,14 +68,14 @@
       p {
         font-size: 1.1rem;
         line-height: 1.8;
-        color: var(--gray-color);
+        color: var(--text-color-muted);
         margin-bottom: 1.5rem;
       }
       
       blockquote {
         font-style: italic;
-        color: var(--secondary-color);
-        border-left: 3px solid var(--secondary-color);
+        color: var(--blockquote-color);
+        border-left: 3px solid var(--blockquote-border-color);
         padding-left: 1.5rem;
         margin: 2rem 0;
         line-height: 1.8;

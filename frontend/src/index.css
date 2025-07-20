@@ -3,13 +3,25 @@
 :root {
   --font-base: "DM Sans", sans-serif;
 
-  --primary-color: #edf2f8;
+  --primary-color:#F3E9DC;
   --secondary-color: #313bac;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
-  --white-color: #ffffff;
+  --white-color: #ffffff; /* Light mode background */
+
+  /* Semantic variables */
+  --text-color: var(--black-color);
+  --text-color-muted: var(--gray-color);
+  --blockquote-color: var(--secondary-color);
+  --blockquote-border-color: var(--secondary-color);
+  --section-bg-color: var(--white-color);
+
+  /* Dark mode colors */
+  --dark-background: #121212;
+  --dark-card-color: #1E1E1E;
+  --dark-hover-color: #2D2D2D;
 }
 
 * {

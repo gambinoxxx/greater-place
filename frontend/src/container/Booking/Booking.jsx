@@ -15,10 +15,11 @@ const BookingCalendar = () => {
   const [status, setStatus] = useState('');
   const [selectedMethod, setSelectedMethod] = useState('whatsapp');
   const [upcomingEvents] = useState([
-    { id: 1, title: 'Annual Showcase', date: '2023-11-15', location: 'Main Hall' },
-    { id: 2, title: 'Youth Workshop', date: '2023-12-05', location: 'Community Center' },
-    { id: 3, title: 'Holiday Special', date: '2023-12-20', location: 'City Park' },
-    { id: 4, title: 'New Year Gala', date: '2024-01-01', location: 'Grand Ballroom' },
+    { id: 1, title: 'Dance Class', date: '2025-6-08', location: 'Eden Center' },
+    { id: 2, title: 'Ayomide Wedding Ogene Dance', date: '2025-8-1', location: ' Grand Hall' },
+    { id: 3, title: 'Annual Retreat', date: '2025-8-3', location: ' Grand Hall' },
+    { id: 4, title: 'Fortune Wedding Ogene Dance', date: '2025-08-29', location: 'Grand Hall' },
+    { id: 5, title: 'Sheltering Grace/Far Above Rubies', date: '2025-10-25', location: 'Grand Ballroom' },
   ]);
 
   const handleChange = (e) => {

@@ -1,7 +1,23 @@
 .app__gallery {
     padding: 4rem 2rem;
-    background-color: var(--white-color);
     text-align: center;
+    position: relative;
+    isolation: isolate; /* Creates a new stacking context for z-index */
+    
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+
+      /* Multi-layered background: a semi-transparent color overlay on top of the image */
+      background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Dark overlay for readability */
+        url('../../assets/about.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Creates a parallax effect */
+    }
   
     .head-text {
       font-size: 3rem;

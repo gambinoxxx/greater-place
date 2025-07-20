@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Navbar.scss';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+    const storedMode = localStorage.getItem('darkMode');
+    return storedMode ? JSON.parse(storedMode) : false;
+  });
+    const [toggle, setToggle] = useState(false);
+  
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -50,8 +56,18 @@ const Navbar = () => {
     }
   };
 
+    useEffect(() => {
+    localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [isDarkMode]);
+
   return (
-    <nav className="app__navbar">
+    <nav className={`app__navbar ${isDarkMode ? 'dark-mode' : ''}`}>
+    
       <div className="app__navbar-logo">
         <img 
           src={images.logo} 
@@ -79,6 +95,14 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-right">
+      <button
+          type="button"
+          className="app__navbar-theme-toggle"
+          onClick={() => setIsDarkMode(!isDarkMode)}
+          aria-label="Toggle theme"
+        >
+          {isDarkMode ? <BsFillSunFill /> : <BsFillMoonFill />}
+        </button>
         <div className="app__navbar-menu">
           <HiMenuAlt4 onClick={() => setToggle(true)} />
 

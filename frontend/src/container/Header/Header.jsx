@@ -19,7 +19,7 @@ const Header = () => {
         setCurrentImageIndex((prevIndex) => 
           (prevIndex + 1) % headerImages.length
         );
-      }, 5000);
+      }, 25000);
     }
     
     return () => {
@@ -39,7 +39,7 @@ const Header = () => {
             <p className="head-text">Greater place</p>
             <motion.div
               whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              transition={{ duration: 0.1, delay: 0.5 }}
               className="app__header-profile"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
@@ -50,7 +50,7 @@ const Header = () => {
                 alt="Gallery Image"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
               />
               <div className="text-overlay">
                 <p className='intro'>Welcome to Greater place Non-profit Inc</p>

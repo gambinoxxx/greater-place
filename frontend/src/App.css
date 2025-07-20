@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  /* 
+    Set the base background color for light mode.
+    This color will show through your pattern.
+  */
+  background-color: var(--white-color);
+  /* Replace with the actual path to your pattern image */
+  background-image: url('./assets/cloud.jpg');
+  background-size: 1900px; /* Adjust this value to make the pattern larger or smaller */
+  background-attachment: fixed; /* This creates a nice effect where the content scrolls over the static pattern */
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+body.dark-mode {
+  /* Redefine semantic variables for dark mode */
+  --text-color: var(--primary-color);
+  --text-color-muted: var(--lightGray-color);
+  --blockquote-color: var(--lightGray-color);
+  --blockquote-border-color: var(--lightGray-color);
+  --section-bg-color: var(--dark-card-color);
+
+  background-color: var(--dark-background);
+  color: var(--text-color);
+  background-image: url('./assets/dark1.jpg');
+  background-size: 700px; /* Adjust this value to make the pattern larger or smaller */
+  background-attachment: fixed; /* This creates a nice effect where the content scrolls over the static pattern */
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+}
