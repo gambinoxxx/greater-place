@@ -28,7 +28,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: 'kaylee.',
+    name: 'love.',
     role: 'Dancer',
     fullText: `
 i’ve been a christian like all of my life but i never truly encountered God. i also never fully understand what it meant to be a christan. i think that my old definition of being a christian would to be a good person, and to not sin a lot???? when i began to grow up i started to compare myself to other people, and mostly comparing my relationship/walk with God. i started going to revolution (middle school church) on wenesdays starting in 6th grade. going to revolution definitely helped me have a greater relationship with God but i still felt like something was missing. around that time i also started to praise dance. i feel like at first i didn’t take praise dancing as serious as i should’ve , but i also didn’t really understand the real meaning of everything. as i started dancing more and more i realized that praise dancing is a way to express your emotions to God without saying words. since then i’ve also felt like when i dance i can finally truly feel Gods presence with me. Dancing Greater place has taught many things and i’m truly grateful for them. i’ve realized that God is always there and he listens has gave me eternal peace in my life and i thank God for allowing Greater Place non profit to be apart of my life. My new definition of being a christian is devoting your life to Christ, following his Word, and trying our hardest to be how Jesus was`,
@@ -36,7 +36,7 @@ i’ve been a christian like all of my life but i never truly encountered God. i
   },
   {
     id: 3,
-    name: 'Love.',
+    name: 'kaylee',
     role: 'Member',
     fullText: 'Being a part of greater place has been such a wonderful experience for me. its not just about the dance, its about connecting with others who share the same passion for expressing our faith through movement. every practice feels like a celebration, where we uplift each other and grow together. performing in front of others allows me to share my joy and love for God. i am so thankful for the friendships that i have formed and the spiritual growth i have experienced through this journey. its truly a blessing to be part of greater place! being in greater place has really changed my life. its like a family where we all support each other, and every practice is filled with laughter and encouragement. it’s such a powerful way to share our faith. dance tells a story, and i love how we can express our emotions and beliefs through movement. its not just about the steps, its about the message we bring and the love we share. i feel so blessed to be part of this journey and to grow both as a dancer and as a person!💛',
     image: images.sharon

@@ -19,7 +19,7 @@ const Header = () => {
         setCurrentImageIndex((prevIndex) => 
           (prevIndex + 1) % headerImages.length
         );
-      }, 25000);
+      }, 5000);
     }
     
     return () => {
@@ -32,7 +32,7 @@ const Header = () => {
       <div className="app__header app__flex">
         <motion.div
           whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.2 }}
           className="app__header-content"
         >
           <div className="app__header-info">
