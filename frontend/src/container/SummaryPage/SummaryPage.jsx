@@ -11,13 +11,12 @@ const SummaryPage = () => {
     { id: 'IXCgjcl-APs' },
     { id: 'KmP1bqAB0_Q'},
     { id: 'O_UcyWEkqSw' },
-    { id: 'ySDk4L9Yr-w'  },
     { id: '_1fbvkqvMy4'},
     { id: 'D2v3MfolRyI'},
     { id: 'ySDk4L9Yr-w'},
-    { id: '_1fbvkqvMy4'},
-    { id: '_1fbvkqvMy4'}
-  ];
+    { id: 'Xp-AhwGJQCU'},
+    { id: 'nnPUAXNlOTk'}
+  ]; 
 
   return (
     <>
@@ -55,7 +54,7 @@ const SummaryPage = () => {
 For as long as I can remember, I’ve had dreams and revelations of dancing and helping kids and youth. These visions confirmed what God was placing in my heart—that now is the time to fully walk in the calling He has given me. </p>
               <p>As a little girl, dancing in God’s presence shaped my spirit, soul, and body in powerful ways. Over time, God has continued to prune and prepare me in ways I never expected. I truly believe that Greater Place is more than a dance it’s a space for holistic growth. It’s a place where individuals of all ages, especially youth, can be nurtured spiritually, emotionally, and physically—through the beautiful avenue of dance.
 
-              <br />At Greater Place, we believe God is concerned with the whole person. In 1 Thessalonians 5:23, Paul prays that our spirit, soul, and body be kept blameless until the coming of the Lord. This Scripture is foundational to what we do—we want people to grow in wholeness, strength, and confidence in Christ. </p>
+              At Greater Place, we believe God is concerned with the whole person. In 1 Thessalonians 5:23, Paul prays that our spirit, soul, and body be kept blameless until the coming of the Lord. This Scripture is foundational to what we do—we want people to grow in wholeness, strength, and confidence in Christ. </p>
               <p>We also celebrate that everyone has their own unique style of dance. Dance is more than movement—it’s worship, expression, and a powerful way to communicate truth. Our aim is to cultivate a space where dance flows not from pain or insecurity, but from healing, freedom, and joy in Christ—just like David, who “danced before the Lord with all his might” (2 Samuel 6:14).
 Greater place is atmosphere of God presence. Can’t wait to grow and dance with you!</p>
             </div>
@@ -67,7 +66,7 @@ Greater place is atmosphere of God presence. Can’t wait to grow and dance with
           <h2>Latest Videos</h2>
           <p>Enjoy our recent worship and performance videos</p>
           <div className="video-grid">
-            {videos.slice(0, showMoreVideos ? 5 : 2).map((video, index) => (
+            {videos.slice(0, showMoreVideos ? 8 : 3).map((video, index) => (
               <div className="video-item" key={video.id}>
                 <div className="youtube-container">
                   <iframe
