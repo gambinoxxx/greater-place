@@ -13,7 +13,12 @@ const Gallery = () => {
     images.sub4, images.sub5, images.sub6,
     images.sub7, images.sub8, images.sub9,
     images.sub10, images.sub11, images.sub12,
-    images.sub13, images.sub14, images.sub15
+    images.sub13, images.sub14, images.sub15,
+    images.new1, images.new2, images.new3,
+    images.new4, images.new5, images.new6,
+    images.new7, images.new8, images.new9,
+    images.new10
+
   ];
 
   const displayedImages = showAll ? allImages : allImages.slice(0, 3);

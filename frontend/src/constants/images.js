@@ -33,6 +33,17 @@ import love from '../assets/love.png';
 import testimony from '../assets/testimony.png';
 import dance from '../assets/dance.png';
 import chris from '../assets/chris.png';
+import new1 from '../assets/new1.png';
+import new2 from '../assets/new2.png';
+import new3 from '../assets/new3.png';
+import new4 from '../assets/new4.png';
+import new5 from '../assets/new5.png';
+import new6 from '../assets/new6.png';
+import new7 from '../assets/new7.png';
+import new8 from '../assets/new8.png';
+import new9 from '../assets/new9.png';
+import new10 from '../assets/new10.png';
+
 import brandy2 from '../assets/brandy2.png';
 // import spotify from '../assets/spotify.png';
 
@@ -74,6 +85,17 @@ const images = {
   chris,
  brandy2,
  kaylee,
+ new1,
+ new2,
+ new3,
+ new4,
+ new5,
+ new6,
+ new7,
+ new8,
+ new9,
+ new10
+ 
   // skype,
   // spotify,
 };

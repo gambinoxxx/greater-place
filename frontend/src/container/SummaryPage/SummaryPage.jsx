@@ -12,6 +12,10 @@ const SummaryPage = () => {
     { id: 'KmP1bqAB0_Q'},
     { id: 'O_UcyWEkqSw' },
     { id: 'ySDk4L9Yr-w'  },
+    { id: '_1fbvkqvMy4'},
+    { id: 'D2v3MfolRyI'},
+    { id: 'ySDk4L9Yr-w'},
+    { id: '_1fbvkqvMy4'},
     { id: '_1fbvkqvMy4'}
   ];
 
@@ -46,14 +50,14 @@ const SummaryPage = () => {
             </div>
             
             <div className="founder-message">
-              <p>
-                Hi everyone, my name is Brandy Onwuzuruike and God has given me this vision of Greater Place Nonprofit Inc. David danced with all his might because of God's presence according to 2 Samuel 6:14. I've learned that everyone has their own unique style of dance, but it's the presence of God that truly makes a difference in both our lives and the lives of those who witness our dance.
-              </p>
-              <p>
-              I want to pour out everything within me from a place of deep intimacy with God. I don't want to us to put on a performance—we carry the tangible presence of God. I desire for it to flow naturally within us through the art of dance, whether in worship to God or as a message for those He has called us to reach. It's a continual, consistent posture of surrender before God; it's a lifestyle, not just a one-time performance.              </p>
-              <p>
-                Creating a space where people of all ages can embrace their God-given creative gifts with confidence and boldness in His presence. For as long as I can remember, dancing as a little girl in God's presence shaped my heart in such a powerful way, and He has pruned me in ways I could never have expected. I truly believe this space will not only bless others but also allow them to experience something similar—to connect with God through their creative art of dance.
-              </p>
+              <p>Hi everyone! My name is Brandy Onwuzuruike, and I am the founder and visionary of Greater Place Nonprofit Inc.
+
+For as long as I can remember, I’ve had dreams and revelations of dancing and helping kids and youth. These visions confirmed what God was placing in my heart—that now is the time to fully walk in the calling He has given me. </p>
+              <p>As a little girl, dancing in God’s presence shaped my spirit, soul, and body in powerful ways. Over time, God has continued to prune and prepare me in ways I never expected. I truly believe that Greater Place is more than a dance it’s a space for holistic growth. It’s a place where individuals of all ages, especially youth, can be nurtured spiritually, emotionally, and physically—through the beautiful avenue of dance.
+
+              <br />At Greater Place, we believe God is concerned with the whole person. In 1 Thessalonians 5:23, Paul prays that our spirit, soul, and body be kept blameless until the coming of the Lord. This Scripture is foundational to what we do—we want people to grow in wholeness, strength, and confidence in Christ. </p>
+              <p>We also celebrate that everyone has their own unique style of dance. Dance is more than movement—it’s worship, expression, and a powerful way to communicate truth. Our aim is to cultivate a space where dance flows not from pain or insecurity, but from healing, freedom, and joy in Christ—just like David, who “danced before the Lord with all his might” (2 Samuel 6:14).
+Greater place is atmosphere of God presence. Can’t wait to grow and dance with you!</p>
             </div>
           </div>
         </section>
