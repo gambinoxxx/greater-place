@@ -43,9 +43,8 @@ import new7 from '../assets/new7.png';
 import new8 from '../assets/new8.png';
 import new9 from '../assets/new9.png';
 import new10 from '../assets/new10.png';
-
 import brandy2 from '../assets/brandy2.png';
-// import spotify from '../assets/spotify.png';
+import ayannam from '../assets/ayanna.m.png';
 
 const images = {
   // email,
@@ -94,8 +93,8 @@ const images = {
  new7,
  new8,
  new9,
- new10
- 
+ new10,
+ ayannam
   // skype,
   // spotify,
 };
