@@ -15,9 +15,9 @@ const BookingCalendar = () => {
   const [status, setStatus] = useState('');
   const [selectedMethod, setSelectedMethod] = useState('whatsapp');
   const [upcomingEvents] = useState([
-    { id: 1, title: 'Dance Class', date: '2025-6-08', location: 'Eden Center' },
-    { id: 2, title: 'Ayomide Wedding Ogene Dance', date: '2025-8-1', location: ' Grand Hall' },
-    { id: 3, title: 'Annual Retreat', date: '2025-8-3', location: ' Grand Hall' },
+    { id: 1, title: 'Dance Class', date: '2025-06-08', location: 'Eden Center' },
+    { id: 2, title: 'Ayomide Wedding Ogene Dance', date: '2025-08-01', location: ' Grand Hall' },
+    { id: 3, title: 'Annual Retreat', date: '2025-08-03', location: ' Grand Hall' },
     { id: 4, title: 'Fortune Wedding Ogene Dance', date: '2025-08-29', location: 'Grand Hall' },
     { id: 5, title: 'Sheltering Grace/Far Above Rubies', date: '2025-10-25', location: 'Grand Ballroom' },
   ]);

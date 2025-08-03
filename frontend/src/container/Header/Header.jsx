@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { images } from '../../constants';
 import './Header.scss';
+
+const headerImages = [
+  images.profile,
+  images.group1,
+  images.profile3,
+];
+
 
 const Header = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const headerImages = [
-    images.profile,
-    images.group1,
-    images.profile3,
-  ];
-
+  
   useEffect(() => {
     let interval;
     if (!isHovered) {
@@ -25,7 +27,7 @@ const Header = () => {
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, [isHovered, headerImages.length]);
+  },   [isHovered]);
 
   return (
     <section className="header-section" id="header">
@@ -44,14 +46,17 @@ const Header = () => {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <motion.img
-                key={currentImageIndex}
-                src={headerImages[currentImageIndex]}
-                alt="Gallery Image"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              />
+             <AnimatePresence>
+                <motion.img
+                  key={currentImageIndex}
+                  src={headerImages[currentImageIndex]}
+                  alt="Gallery Image"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                />
+              </AnimatePresence>
               <div className="text-overlay">
                 <p className='intro'>Welcome to Greater place Non-profit Inc</p>
               </div>
