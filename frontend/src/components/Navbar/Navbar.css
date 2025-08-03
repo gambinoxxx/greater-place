@@ -1,0 +1,10 @@
+/* src/components/Navbar/Navbar.css */
+
+.navbar {
+  /* Your existing navbar styles */
+}
+
+.navbar.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--white-color); /* Assuming you want text to be white in dark mode */
+}
