@@ -29,7 +29,7 @@
   &-content {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
   }
 
@@ -43,13 +43,14 @@
   &-profile {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1500px; // Increased by 30% from 800px
     margin: 1rem auto;
     // Set a preferred aspect ratio for the container to allow for absolute positioning of the images.
     // This is necessary for the cross-fade animation. Adjust the ratio to best fit your images.
     aspect-ratio: 4 / 3;
     max-height: 80vh; // Moved from img to the container
-    
+    transition: transform 0.3s ease-in-out;
+
     img {
       // Position images on top of each other for the cross-fade effect
       position: absolute;
@@ -64,7 +65,7 @@
 
     .text-overlay {
       position: absolute;
-      bottom: 20%;
+      bottom: 25%;
       left: 50%;
       transform: translateX(-50%);
       width: 80%;
@@ -126,7 +127,7 @@
   }
 
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 900px) {
     padding: 4rem;
     
     .head-text {
@@ -134,15 +135,16 @@
     }
 
     &-profile {
-      max-width: 1000px;
+      max-width: 1500px; // Increased by 30% from 1000px
+      transform: scale(2);
       
       .text-overlay {
-        bottom: 25%;
-        width: 40%;
+        bottom: 30%;
+        width: 70%;
         padding: 2rem;
         
         .intro {
-          font-size: 1rem;
+          font-size: 0.8rem;
         }
         
         .explore-btn {
