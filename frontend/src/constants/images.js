@@ -44,10 +44,18 @@ import new8 from '../assets/new8.png';
 import new9 from '../assets/new9.png';
 import new10 from '../assets/new10.png';
 import brandy2 from '../assets/brandy2.png';
+import ijeoma2 from '../assets/ijeoma2.png';
+import camp1 from '../assets/camp1.jpeg';
+import camp2 from '../assets/camp2.jpeg';
+import camp3 from '../assets/camp3.jpeg';
 import ayannam from '../assets/ayanna.m.png';
 
+
 const images = {
-  // email,
+  camp1,
+  camp2,
+  camp3,
+  ijeoma2,
   ayanna,
   brandy,
   group1,

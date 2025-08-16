@@ -8,6 +8,7 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const allImages = [
+    images.camp1,images.camp2,images.camp3,
     images.top4, images.top2, images.top3, 
     images.sub1, images.sub2, images.sub3,
     images.sub4, images.sub5, images.sub6,
@@ -17,8 +18,7 @@ const Gallery = () => {
     images.new1, images.new2, images.new3,
     images.new4, images.new5, images.new6,
     images.new7, images.new8, images.new9,
-    images.new10
-
+    images.new10,images.top4, images.top2, images.top3,
   ];
 
   const displayedImages = showAll ? allImages : allImages.slice(0, 3);
